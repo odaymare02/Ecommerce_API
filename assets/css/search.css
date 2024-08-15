@@ -1,0 +1,66 @@
+.main {
+  height: 50vh;
+}
+.searchs {
+  transition: all 0.5s linear;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #000;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.product-box {
+  position: relative;
+  transition: all 0.5s linear;
+}
+.product-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.product-box .fa-heart,
+.product-box .fa-cart-plus,
+.fa-circle-info {
+  display: none;
+}
+.product-box:hover .fa-heart,
+.product-box:hover .fa-cart-plus,
+.product-box:hover .fa-circle-info {
+  display: block !important ;
+}
+.product-box .icons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.product-box .icons .fa-heart {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 300ms;
+}
+.product-box .icons .fa-heart:hover {
+  color: red !important;
+  transform: scale(1.2);
+}
+.product-box .icons .fa-cart-plus {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 150ms;
+}
+.product-box .icons .fa-circle-info {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 50ms;
+}
+.product-box .icons .fa-cart-plus:hover {
+  color: red !important;
+  transform: scale(1.2);
+}
+.product-box .icons .fa-circle-info:hover {
+  color: green !important;
+  transform: scale(1.2);
+}

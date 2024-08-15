@@ -1,0 +1,37 @@
+.welcome{
+    --animation-delay:500ms;
+}
+.desc{
+    --animation-delay:650ms;
+}
+.explore{
+    --animation-delay:800ms;
+}
+section{
+    padding-block: 80px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+    
+}
+.photo{
+    height: 50vh;
+}
+.team-info img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter:grayscale(100%) drop-shadow(0px 0px 7px #232323) ;
+    transition: all 0.5s ease;
+}
+.team-info img:hover{
+    filter:grayscale(0%) drop-shadow(0px 0px 7px #232323) ;
+}
+.social-media a{
+    transition: all 0.5s ease;
+}
+.social-media a:hover i{
+    color: #000;
+}

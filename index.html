@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O-Shope</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/public.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-center align-items-center vh-100 opacity-75 bg-dark overlay fixed-top"
+    >
+      <div class="spinner-grow bg-white" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-4">
+        <div class="container ">
+          <a class="navbar-brand" href="#">O_Shope</a>
+          <div class="d-flex gap-4 order-lg-3">
+            <button
+            class="btn btn-outline-main"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="text-transform: uppercase"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass fa-sm"
+              style="color: #000000"
+            ></i>
+          </button>
+          <button
+            class="btn btn-outline-main position-relative oday"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-cart-plus" style="color: #000000"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About-us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact-Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+              </li>
+              <li class="nav-item">
+                <div class="mode btn">  
+                  <i class="fa-solid fa-sun"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide vh-100">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <video class="object-fit-fill" autoplay loop muted>
+              <source
+                src="./assets/images/slider/5585944-hd_1920_1080_25fps.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div
+              class="carousel-caption h-100 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="carousel-info w-100 bg-black bg-gradient p-5 rounded-3 border-top border-4 border-black fade-up"
+                style="--bs-bg-opacity: 0.5"
+              >
+                <h5>Oday_Shope</h5>
+                <p>Everything you need under one roof</p>
+                <a href="categories.html" class="btn btn-outline-main"
+                  >Show More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item h-100"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(./assets/images/slider/one.jpg);
+            "
+          >
+            <div
+              class="carousel-caption h-100 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="carousel-info w-100 bg-black bg-gradient p-5 rounded-3 border-top border-4 border-black fade-down"
+                style="--bs-bg-opacity: 0.5"
+              >
+                <h5>Oday_Shope</h5>
+                <p>Everything you need under one roof</p>
+                <a href="#" class="btn btn-outline-main">Show More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item h-100"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(./assets/images/slider/two.jpg);
+            "
+          >
+            <div
+              class="carousel-caption h-100 d-flex justify-content-center align-items-center"
+            >
+              <div
+                class="carousel-info w-100 bg-black bg-gradient p-5 rounded-3 border-top border-4 border-black fade-down"
+                style="--bs-bg-opacity: 0.5"
+              >
+                <h5>Oday_Shope</h5>
+                <p>Everything you need under one roof</p>
+                <a href="#" class="btn btn-outline-main">Show More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="services bg-light">
+        <div class="container">
+          <h1 class="text-dark title">Services</h1>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div
+                class="service-box text-center bg-white p-4 rounded-2 shadow"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-truck"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5v7h-1v-7a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5v1A1.5 1.5 0 0 1 0 10.5v-7zM4.5 11h6v1h-6v-1z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M11 5h2.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5h-1v-1h1a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4.5h-1V5zm-8 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                  ></path>
+                </svg>
+                <h4>Worldwide Delivery</h4>
+                <p class="text-secondary">
+                  Far far away, behind the word mountains, far from the
+                  countries.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="service-box text-center bg-white p-4 rounded-2 shadow"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-shield-lock"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"
+                  ></path>
+                  <path
+                    d="M9.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  ></path>
+                  <path
+                    d="M7.411 8.034a.5.5 0 0 1 .493-.417h.156a.5.5 0 0 1 .492.414l.347 2a.5.5 0 0 1-.493.585h-.835a.5.5 0 0 1-.493-.582l.333-2z"
+                  ></path>
+                </svg>
+                <h4>Secure Payments</h4>
+                <p class="text-secondary">
+                  Far far away, behind the word mountains, far from the
+                  countries.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="service-box text-center bg-white p-4 rounded-2 shadow"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-counterclockwise"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.83 6.706a5 5 0 0 0-7.103-3.16.5.5 0 1 1-.454-.892A6 6 0 1 1 2.545 5.5a.5.5 0 1 1 .91.417 5 5 0 1 0 9.375.789z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.854.146a.5.5 0 0 0-.708 0l-2.5 2.5a.5.5 0 0 0 0 .708l2.5 2.5a.5.5 0 1 0 .708-.708L5.707 3 7.854.854a.5.5 0 0 0 0-.708z"
+                  ></path>
+                </svg>
+                <h4>Simple Returns</h4>
+                <p class="text-secondary">
+                  Far far away, behind the word mountains, far from the
+                  countries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="some-products bg-light" >
+        <h1 class="text-dark title container">Some Of Products</h1>
+        <div class="container">
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                TopRated
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="row g-2 m-5"></div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-2 m-5"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div
+          class="thing card-img"
+          style="
+            background-image: url(./assets/images/slider/two.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+          "
+        >
+        <div class="overlay d-flex justify-content-center align-items-center h-100">
+          <div
+          class="overlay-info carousel-info w-50 bg-black bg-gradient p-5 rounded-3 border-top border-4 border-black text-bg-dark"
+          style="--bs-bg-opacity: 0.5"
+        >
+        
+          <h5 class=" text-center">O-Shope</h5>
+          <p class="">
+            This is a wider card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </p>
+          <p class=""><small>Last updated 3 mins ago</small></p>
+        </div>
+        </div>
+       
+    </div>
+    </main>
+    <footer class="mt-5 ">
+      <div class="container">
+        <div class="row bg-light p-2 rounded-top">
+          <div class="col-lg-2">
+            <div class="help d-flex flex-column justify-content-center gap-4">
+              <h3>
+                Help
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Account</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Shipping</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Returns</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="help d-flex flex-column justify-content-center gap-4">
+              <h3>
+                About
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Press</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Careers</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Team</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="help d-flex flex-column justify-content-center gap-4">
+              <h3>
+                Shop
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-dark">Store</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Gift Cards</a>
+                </li>
+                <li>
+                  <a href="#" class="text-dark">Student Discount</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="help d-flex flex-column justify-content-center align-items-center gap-4">
+              <h5>
+               Join our and receive exclusives
+              </h5>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-main" type="submit" id="button-addon2">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light p-2 rounded-bottom">
+          <div class="col-12 text-center copyright">
+          <p>
+          
+          Copyright © 2024 All rights reserved | This ecommerce is made with <i class="fa-solid fa-heart text-danger" ></i> by <a href="https://www.facebook.com/profile.php?id=100013808106839" target="_blank">Oday_mare</a>
+          </p>
+          </div>
+          </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header mw-100 mb-5 fade-up">
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="fa-solid fa-magnifying-glass fa-sm"></i
+              ></span>
+              <div class="form-floating search"  >
+                <input
+                  type="text"
+                  class="form-control text-center text-uppercase"
+                  id="floatingInputGroup1"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1">Seaech</label>
+              </div>
+              <button
+                type="button"
+                class="btn-close m-auto"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container p-3">
+              <div class="row g-3 vh-100 resOfSe">
+                <h3 class="text-center text-dark fade-down">
+                  enter value to search:)
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header justify-content-center">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body"></div>
+      <div
+        class="offcanvas-footer d-flex align-items-center justify-content-around"
+      >
+        <p>total:</p>
+        <span class="toot"></span>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

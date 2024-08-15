@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  background-color: #ffffff;
+  font-family: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --animation-delay: 200ms;
+}
+.btn-outline-main {
+  --bs-btn-color: gray;
+  --bs-btn-border-color: gray;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: gray;
+  --bs-btn-hover-border-color: gray;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: gray;
+  --bs-btn-active-border-color: gray;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: gray;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: gray;
+  --bs-gradient: none;
+}
+nav {
+  font-size: 15px;
+  font-weight: 600;
+}
+nav a{
+  color: #fff !important;
+}
+nav .mode i{
+  color: #FCE570 ;
+  transition: all 1s ease;
+}
+
+.bg-body-tertiary {
+  background-color: transparent !important ;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+.navbar-nav .nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+.carousel-item {
+  background-position: bottom;
+  background-size: cover;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+  box-sizing: content-box;
+  padding: 10px;
+}
+.carousel-control-next {
+  right: 10px;
+}
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: gray;
+  border: 2px solid gray;
+}
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 0.6s linear;
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+.dark-scrolled{
+  background-color:rgb(33,37,41) !important;
+  transition: background-color 0.6s linear;
+  box-shadow: 0px 0px 10px 0px rgba(250,250,250,0.75);
+}
+.dark-mode{
+  background-color:rgb(33,37,41) !important;
+}
+section {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  padding-block: 80px;
+}
+section .title {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+section .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+.product-box {
+  position: relative;
+  transition: all 0.5s linear;
+}
+.product-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.product-box .fa-heart,
+.product-box .fa-cart-plus,
+.fa-circle-info {
+  display: none;
+}
+.product-box:hover .fa-heart,
+.product-box:hover .fa-cart-plus,
+.product-box:hover .fa-circle-info {
+  display: block !important ;
+}
+.product-box .icons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.product-box .icons .fa-heart {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 300ms;
+}
+.product-box .icons .fa-heart:hover {
+  color: red !important;
+  transform: scale(1.2);
+}
+.product-box .icons .fa-cart-plus {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 150ms;
+}
+.product-box .icons .fa-circle-info {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  --animation-delay: 50ms;
+}
+.product-box .icons .fa-cart-plus:hover {
+  color: red !important;
+  transform: scale(1.2);
+}
+.product-box .icons .fa-circle-info:hover {
+  color: green !important;
+  transform: scale(1.2);
+}
+/*
+  animation
+  */
+.fade-down {
+  position: relative;
+  animation: fade-down 700ms forwards ease-out;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  bottom: 80px;
+}
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    bottom: 80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.fade-up {
+  position: relative;
+  animation: fade-up 700ms forwards ease-out;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  bottom: -80px;
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  60% {
+    opacity: 0.7;
+    bottom: 4px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: gray;
+  color: #000;
+}
+.nav-pills .nav-link {
+  color: #6b6b6b;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: rgb(55, 55, 55);
+}
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.184);
+  opacity: 1;
+}
+.thing {
+  height: 100vh;
+  background-position-y: 108px;
+}
+footer .list-unstyled a{
+  color: gray !important;
+}

@@ -1,0 +1,41 @@
+nav {
+  font-size: 15px;
+  font-weight: 600;
+}
+.bg-body-tertiary {
+  background-color: transparent !important ;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+.navbar-nav .nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 0.6s linear;
+}
+.card {
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card-img-overlay {
+  display: none !important ;
+}
+.card:hover .card-img-overlay {
+  display: flex !important;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.title {
+  --animation-delay: 1000ms;
+}

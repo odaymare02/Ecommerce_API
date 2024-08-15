@@ -1,0 +1,12 @@
+.details-end {
+  --animation-delay: 1000ms;
+}
+.review {
+  --animation-delay: 1500ms;
+}
+.sos {
+  --animation-delay: 1700ms;
+}
+.main-img img {
+  --animation-delay: 2000ms;
+}
