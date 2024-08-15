@@ -326,16 +326,17 @@ mode.addEventListener("click",()=>{
       section.classList.replace("bg-dark","bg-light");
       section.querySelector(".title").classList.replace("text-white","text-dark");
     });
-    mode.querySelector("i").style.transform="rotate(-180deg) translateX(0)";
+    mode.querySelector("i").style.transform="rotate(-180deg)";
     mode.querySelector("i").classList.replace("fa-moon","fa-sun");
     mode.querySelector("i").style.color="#FCE570";
     document.querySelector(".offcanvas").classList.remove("bg-dark");
     document.querySelector(".offcanvas").classList.remove("text-light");
     document.querySelector(".modal-dialog").removeAttribute("data-bs-theme");
+    document.querySelector(".navbar-toggler").setAttribute("data-bs-theme","light");
 
   } else {
     body.classList.add("dark-mode");
-    mode.querySelector("i").style.transform="rotate(360deg) translateX(50px)";
+    mode.querySelector("i").style.transform="rotate(360deg)";
     mode.querySelector("i").classList.replace("fa-sun","fa-moon");
     mode.querySelector("i").style.color="#fff"
 ;    document.querySelectorAll("nav a").forEach(el=>{
@@ -349,5 +350,6 @@ mode.addEventListener("click",()=>{
     document.querySelector(".offcanvas").classList.add("bg-dark");
     document.querySelector(".offcanvas").classList.add("text-light");
     document.querySelector(".modal-dialog").setAttribute("data-bs-theme","dark");
+    document.querySelector(".navbar-toggler").setAttribute("data-bs-theme","dark");
   }
 });
