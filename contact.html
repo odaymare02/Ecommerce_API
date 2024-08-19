@@ -15,19 +15,20 @@
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
-  />
+    />
   <link rel="stylesheet" href="./assets/css/public.css">
   <link rel="stylesheet" href="./assets/css/contact.css">
-    <title>contact</title>
+  <title>contact</title>
 </head>
 <body>
-    <header>
 
-           <div class="w-100 text-center bg-dark bg-gradient text-white p-5 fade-down d-flex justify-content-center align-items-center vh-100">
-             <h1 class="text-uppercase"><a href="index.html">Home > </a>contact</h1>
-     
-           </div>
-    </header>
+  <header>
+    <div class="w-100 text-center bg-dark bg-gradient text-white p-5 fade-down d-flex justify-content-center align-items-center vh-100">
+      <h1 class="text-uppercase"><a href="index.html">Home > </a>contact</h1>
+      
+    </div>
+  </header>
+  
     <section class="contact p-5">
             <div class="container">
               <div class="title">
@@ -37,12 +38,12 @@
                 <div class="row shadow p-3">
                   <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="address d-flex justify-content-center gap-4">
-                      <i class="fa-solid fa-location-dot fa-2xl align align-self-center " style="color: #1bbd36;"></i>
-                      <div class="addres-info">
+                      <i class="fa-solid fa-location-dot fa-2xl align align-self-center " style="color: #000;"></i>
+                      <div class="addres-info ">
                         <h3>
                           location:
                         </h3>
-                        <address>
+                        <address class="text-secondary">
                         123 Street, City
                         Country
                       </address>
@@ -51,42 +52,40 @@
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="address d-flex justify-content-center gap-4">
-                      <i class="fa-regular fa-clock fa-2xl align align-self-center " style="color: #1bbd36;"></i>
-                      <div class="addres-info">
+                      <i class="fa-regular fa-clock fa-2xl align align-self-center " style="color: #000;"></i>
+                      <div class="Hours-info  ">
                         <h3>
                           Open Hours:
                         </h3>
-                        <address>
-                        123 Street, City
-                        Country
+                        <address class="text-secondary">
+                          Sunday-Friday:
+                          11:00 AM - 2300 PM
                       </address>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="address d-flex justify-content-center gap-4">
-                      <i class="fa-regular fa-envelope fa-2xl align align-self-center " style="color: #1bbd36;"></i>
-                      <div class="addres-info">
+                      <i class="fa-regular fa-envelope fa-2xl align align-self-center " style="color: #000;"></i>
+                      <div class="addres-info ">
                         <h3>
-                          location:
+                          Email:
                         </h3>
-                        <address>
-                        123 Street, City
-                        Country
+                        <address class="text-secondary">
+                        mareoday123@gmail.com
                       </address>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="address d-flex justify-content-center gap-4">
-                      <i class="fa-solid fa-phone fa-2xl align align-self-center " style="color: #1bbd36;"></i>
-                      <div class="addres-info">
+                      <i class="fa-solid fa-phone fa-2xl align align-self-center " style="color: #000;"></i>
+                      <div class="addres-info ">
                         <h3>
-                          location:
+                          Phone:
                         </h3>
-                        <address>
-                        123 Street, City
-                        Country
+                        <address class="text-secondary">
+                        +972 569619602
                       </address>
                       </div>
                     </div>
@@ -95,11 +94,11 @@
                 <form class="d-flex flex-column gap-4 shadow-lg p-3 rounded-3"> 
                   <div class="groups d-flex flex-column gap-4">
                     <div class="name form-floating w-100">
-                      <input type="text" class="form-control" id="name" placeholder="asdasdasda"/>
-                      <label for="name">Nmae</label>
+                      <input type="text" class="form-control" id="name" placeholder="asdasdasda" title="eg: Oday Mare , Tariq Shreem"/>
+                      <label for="name">Name</label>
                     </div>
                     <div class="email form-floating w-100">
-                      <input type="text" class="form-control" id="email" placeholder="asdasdasda"/>
+                      <input type="text" class="form-control" id="email" placeholder="asdasdasda" title="eg:yourname@domain.com"/>
                       <label for="email">Email</label>
                     </div>
                   </div>
@@ -107,7 +106,7 @@
                     <textarea class="form-control" id="message" placeholder="asdasdasda" rows="10" cols="10"></textarea>
                     <label for="message">Message</label>
                   </div>
-                 <button class="btn btn-outline-main"> send</button>
+                 <button class="btn btn-outline-main" id="sendbtn"> send</button>
                 </form>
               </div>
             </div>
@@ -208,5 +207,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 </html>

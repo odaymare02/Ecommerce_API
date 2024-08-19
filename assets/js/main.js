@@ -226,7 +226,7 @@ let totalPrice = 0;
 const addToCart = async (id) => {
   const response = await fetch(`https://dummyjson.com/products/${id}`);
   const data = await response.json();
-  let { title, price, thumbnail: src } = data;
+  let { title, price, thumbnail } = data;
   let product = cart.find((item) => {
     return item.name == title;
   });
