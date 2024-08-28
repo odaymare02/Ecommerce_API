@@ -7,7 +7,6 @@ const getData = async () => {
     const url = params.get("url");
     const response = await fetch(`${url}`);
     const data = await response.json();
-    console.log(url);
     return data;
   } catch (e) {
     console.error(e);
@@ -181,10 +180,17 @@ const inc = (name) => {
   updatCart(cart);
 };
 window.addEventListener("scroll", () => {
+  const allLinks = document.querySelectorAll("nav a");
   const triggerBottom = window.innerHeight;
   if (window.scrollY > 0) {
     nav.classList.add("scrolled");
+    for(let i = 0; i < allLinks.length; i++){
+      allLinks[i].classList.add("text-black");
+    }
   } else {
     nav.classList.remove("scrolled");
+    for(let i = 0; i < allLinks.length; i++){
+      allLinks[i].classList.remove("text-black");
+    }
   }
 });

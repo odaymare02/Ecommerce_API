@@ -1,3 +1,5 @@
+const rightbtn=document.querySelector(".right");
+const leftbtn=document.querySelector(".left");
 const getData = async () => {
   try {
     const params = new URLSearchParams(window.location.search);
@@ -23,7 +25,6 @@ const displayData = async () => {
     document.querySelector(".main-img img").setAttribute("src", data.thumbnail);
     document.querySelector(".main-img img").classList.add("fade-right");
     const imgSlider = document.querySelectorAll(".slider-img img");
-    console.log(imgSlider);
     for (let i = 0; i < imgSlider.length; i++) {
       imgSlider[i].addEventListener("click", () => {
         document
@@ -31,6 +32,36 @@ const displayData = async () => {
           .setAttribute("src", imgSlider[i].getAttribute("src"));
       });
     }
+    const allImages =Array.from(document.querySelectorAll(".slider-img img"));
+    let currentIndex = 0;
+rightbtn.addEventListener("click", () => {
+  currentIndex++;
+  if(currentIndex>=allImages.length){
+    currentIndex=0;
+  }
+  document
+  .querySelector(".main-img img")
+  .setAttribute("src", allImages[currentIndex].getAttribute("src"));
+});
+leftbtn.addEventListener("click",()=>{
+  currentIndex--;
+  if(currentIndex<0){
+    currentIndex=allImages.length-1;
+  }
+  document
+ .querySelector(".main-img img")
+ .setAttribute("src", allImages[currentIndex].getAttribute("src"));
+});
+document.addEventListener("keydown",(e)=>{
+  if(e.code=="ArrowRight"){
+    rightbtn.click();
+  }
+});
+document.addEventListener("keydown",(e)=>{
+  if(e.code=="ArrowLeft"){
+    leftbtn.click();
+ }
+});
     const res = `
                         <div class="details-end fade-down">
                            <div class="category d-flex justify-content-center align-items-center gap-2">

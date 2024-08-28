@@ -58,7 +58,7 @@ const displayData = async () => {
             `;
       })
       .join("");
-    document.querySelector(".active .row").innerHTML = result;
+    document.querySelector(".some-products .active .row").innerHTML = result;
     addTo = document.querySelectorAll(".add");
     addTo.forEach((el) => {
       el.addEventListener("click", () => {
@@ -110,7 +110,7 @@ const displayData = async () => {
                     `;
             })
             .join(" ");
-          document.querySelector(".active .row").innerHTML = alo;
+          document.querySelector(".some-products .active .row").innerHTML = alo;
           addTo = document.querySelectorAll(".add");
           addTo.forEach((el) => {
             el.addEventListener("click", () => {
@@ -196,7 +196,6 @@ window.addEventListener("scroll", () => {
       nav.classList.add("dark-scrolled");
     }
     else{
-
       nav.classList.add("scrolled");
     }
     for(let i = 0; i < allLinks.length; i++){
@@ -231,7 +230,7 @@ const addToCart = async (id) => {
     return item.name == title;
   });
   if (!product) {
-    cart.push({ name: title, price: price, quantity: 1, img: data.thumbnail });
+    cart.push({ name: title, price: price, quantity: 1, img:thumbnail });
   } else {
     product.quantity++;
   }
