@@ -38,31 +38,35 @@
     <main>
       <section class="searchs pt-5 sticky-top">
         <div class="container">
-          <div class="title d-flex justify-content-around align-items-center">
-            <h3 class="flex-grow-1">Search</h3>
-            <button
-              class="btn btn-outline-main me-5 position-relative oday"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasExample"
-              role="button"
-              aria-controls="offcanvasExample"
+          <div class="row title g-3">
+         <div class="col-md-6 d-flex justify-content-between align-items-center">
+           <h3>Search</h3>
+           <button
+           class="btn btn-outline-main me-5 position-relative oday"
+           data-bs-toggle="offcanvas"
+           href="#offcanvasExample"
+           role="button"
+           aria-controls="offcanvasExample"
+         >
+           <i class="fa-solid fa-cart-plus" style="color: #000000"></i>
+         </button>
+         </div>
+         <div class="col-md-6">
+          <div class="form-floating mb-3 flex-grow-1">
+            <input
+              type="text"
+              class="form-control text-uppercase text-center fw-bolder search"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label
+              class="d-flex justify-content-center align-items-center gap-1"
+              for="floatingInput"
+              ><i class="fa-solid fa-magnifying-glass fa-2xs"></i
+              >search</label
             >
-              <i class="fa-solid fa-cart-plus" style="color: #000000"></i>
-            </button>
-            <div class="form-floating mb-3 flex-grow-1">
-              <input
-                type="text"
-                class="form-control text-uppercase text-center fw-bolder search"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label
-                class="d-flex justify-content-center align-items-center gap-1"
-                for="floatingInput"
-                ><i class="fa-solid fa-magnifying-glass fa-2xs"></i
-                >search</label
-              >
-            </div>
+          </div>
+         </div>
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ search.addEventListener("input", async (e) => {
          </div>
         `;
       } else {
-        document.querySelector(".row").innerHTML = result;
+        document.querySelector(".res .row").innerHTML = result;
         addTo = document.querySelectorAll(".add");
         for (let i = 0; i < addTo.length; i++) {
           addTo[i].addEventListener("click", () => {
